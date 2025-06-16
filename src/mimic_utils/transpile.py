@@ -11,9 +11,9 @@ from sqlglot.expressions import to_identifier
 
 # Apply transformation monkey patches
 # these modules are imported for their side effects
-from mimic_utils.sqlglot_dialects import postgres
-from mimic_utils.sqlglot_dialects import bigquery
-from mimic_utils.sqlglot_dialects import duckdb
+from mimic_utils.sqlglot_dialects import postgres  # noqa: F401
+from mimic_utils.sqlglot_dialects import bigquery  # noqa: F401
+from mimic_utils.sqlglot_dialects import duckdb  # noqa: F401
 
 # sqlglot has a default convention that function names are upper-case
 _FUNCTION_MAPPING = {

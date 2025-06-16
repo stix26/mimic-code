@@ -1,8 +1,7 @@
 import sqlglot
 import sqlglot.dialects.duckdb
 from sqlglot.dialects.duckdb import DuckDB
-from sqlglot import Expression, exp, select
-from sqlglot.helper import seq_get
+from sqlglot import Expression, exp
 
 # Monkey patches for duckdb
 # (1) date_sub / date_add

@@ -1,6 +1,6 @@
 import sqlglot
 import sqlglot.dialects.bigquery
-from sqlglot import Expression, exp, select
+from sqlglot import exp
 from sqlglot.helper import seq_get
 
 sqlglot.dialects.bigquery.BigQuery.Parser.FUNCTIONS["PARSE_DATETIME"] = lambda args: exp.StrToTime(
